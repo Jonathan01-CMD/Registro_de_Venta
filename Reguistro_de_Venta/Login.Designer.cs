@@ -1,7 +1,7 @@
 ﻿
 namespace Reguistro_de_Venta
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
