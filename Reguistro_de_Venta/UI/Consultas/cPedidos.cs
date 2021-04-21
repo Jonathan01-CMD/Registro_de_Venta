@@ -3,23 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Reguistro_de_Venta
+namespace Reguistro_de_Venta.UI.Consultas
 {
-    public partial class Form1 : Form
+    public partial class cPedidos : Form
     {
-        public Form1()
+        public cPedidos()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
