@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Reguistro_de_Venta.Entidades
 {
-    class Pedidos
+    public class Pedidos
     {
         public int PedidoId { get; set; }
         public string NombreCliente { get; set; }

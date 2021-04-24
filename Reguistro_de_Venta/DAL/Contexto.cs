@@ -9,6 +9,7 @@ namespace Reguistro_de_Venta.DAL
     public class Contexto : DbContext
     {
         public DbSet<Productos> Productos { get; set; }
+        public DbSet<Pedidos> Pedidos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
