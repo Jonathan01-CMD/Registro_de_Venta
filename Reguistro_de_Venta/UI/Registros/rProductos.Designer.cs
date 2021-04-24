@@ -40,6 +40,7 @@ namespace Reguistro_de_Venta.UI.Registros
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
+            this.Buscarbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NombreProductolabel
@@ -108,7 +109,7 @@ namespace Reguistro_de_Venta.UI.Registros
             // 
             // Nuevobutton
             // 
-            this.Nuevobutton.Location = new System.Drawing.Point(55, 203);
+            this.Nuevobutton.Location = new System.Drawing.Point(35, 192);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(94, 29);
             this.Nuevobutton.TabIndex = 8;
@@ -117,7 +118,7 @@ namespace Reguistro_de_Venta.UI.Registros
             // 
             // Guardarbutton
             // 
-            this.Guardarbutton.Location = new System.Drawing.Point(189, 203);
+            this.Guardarbutton.Location = new System.Drawing.Point(137, 192);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(94, 29);
             this.Guardarbutton.TabIndex = 9;
@@ -126,12 +127,21 @@ namespace Reguistro_de_Venta.UI.Registros
             // 
             // Eliminarbutton
             // 
-            this.Eliminarbutton.Location = new System.Drawing.Point(323, 203);
+            this.Eliminarbutton.Location = new System.Drawing.Point(239, 192);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(94, 29);
             this.Eliminarbutton.TabIndex = 10;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            // 
+            // Buscarbutton
+            // 
+            this.Buscarbutton.Location = new System.Drawing.Point(341, 194);
+            this.Buscarbutton.Name = "Buscarbutton";
+            this.Buscarbutton.Size = new System.Drawing.Size(94, 29);
+            this.Buscarbutton.TabIndex = 11;
+            this.Buscarbutton.Text = "Buscar";
+            this.Buscarbutton.UseVisualStyleBackColor = true;
             // 
             // rProductos
             // 
@@ -139,6 +149,7 @@ namespace Reguistro_de_Venta.UI.Registros
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(471, 265);
+            this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
@@ -171,5 +182,6 @@ namespace Reguistro_de_Venta.UI.Registros
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button Eliminarbutton;
+        private System.Windows.Forms.Button Buscarbutton;
     }
 }
