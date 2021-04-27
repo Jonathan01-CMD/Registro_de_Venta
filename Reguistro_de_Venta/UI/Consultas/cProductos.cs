@@ -39,22 +39,6 @@ namespace Reguistro_de_Venta.UI.Consultas
             {
                 listado = ProductosBLL.GetList(c => true);
             }
-
-            if (FiltroCheckBox.Checked == true)
-            {
-              //  listado = ProductosBLL.GetList(e => e.FechaCreacion.Date >= FechaDesdeDateTimePicker.Value.Date && e.FechaCreacion.Date <= FechaHastaDateTimePicker.Value.Date);
-            }
-
-            if (ActivoRadioButton.Checked == true)
-            {
-              //  listado = ProductosBLL.GetList(e => e.EsActivo == true);
-            }
-
-            if (InactivoRadioButton.Checked == true)
-            {
-               // listado = ProductosBLL.GetList(e => e.EsActivo == false);
-            }
-
             DataGridView.DataSource = null;
             DataGridView.DataSource = listado;
         }

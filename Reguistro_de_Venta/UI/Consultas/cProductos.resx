@@ -58,21 +58,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="ImprimirButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rwAAAK8BK7AVuQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAESSURBVEhL7ZQx
-        TgJBGEaXaGnFFUw8g6WJHgAv4DVsLTShUUr0AnoHTTQa7fUQNtKopY28x0CymfDvMhCteMkL/8x8/wyw
-        DNWaVdjGb/xt0YzZYvbQDa6xH+iaGbPFzA5oal4kE/InB3TwEI/xCm321fE880wP3SNkgDas4gWGfKEP
-        bmMyKsOeG/ycjAJ8ByepXAp73SPk3w+4Q+eavMUZRQds4g8+4rxLpq6ZMSutB9Qf8g4aPsII18yYXegh
-        +xOzoe4ubuE+Hky1ds61PH+OIV4SL8spPqENXTyb1nWdc83arD2tF63OJX6kMvwEMsJhKst4wOdUNvKC
-        96ks4x1fMf//yTVjtpg3zL/3SLNrlqGqxhz9hU2Qjap2AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="BuscarButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKISURBVDhPY0AG
+        cgAAAHIBsYahGgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKISURBVDhPY0AG
         oaGhzOm5fb4NLXOn1jTMmpBbPDUEKMwIkSUAKqqnB8+Yu+HSpu2H/y1avevl9CVb3y1YvPlvS/v8VxW1
         sxKgyrCD6sb5oQcPn/3UvmDLpaYNB962Hz7zv3Hvkf/lK3d8bJyz/kb/lOW/Kxrn1uu5lXBDtSBAYGyD
         2JbtR5/Uz9lwfs3V2/8XXbzxv/Xgif8tIHzg+P/m/cf+V8xYc6Wrd/EPr5Bqf6AWVC919a1oXLv98LMp
