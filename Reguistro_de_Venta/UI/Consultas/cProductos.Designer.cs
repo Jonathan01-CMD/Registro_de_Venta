@@ -31,7 +31,7 @@ namespace Reguistro_de_Venta.UI.Consultas
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cProductos));
             this.ImprimirButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.InactivoRadioButton = new System.Windows.Forms.RadioButton();
@@ -46,7 +46,7 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.FiltroComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.FiltroCheckBox = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -62,14 +62,14 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.ImprimirButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ImprimirButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // DataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 77);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(795, 410);
-            this.dataGridView1.TabIndex = 16;
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Location = new System.Drawing.Point(12, 77);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.RowTemplate.Height = 25;
+            this.DataGridView.Size = new System.Drawing.Size(795, 410);
+            this.DataGridView.TabIndex = 16;
             // 
             // BuscarButton
             // 
@@ -79,6 +79,7 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.BuscarButton.Size = new System.Drawing.Size(72, 65);
             this.BuscarButton.TabIndex = 15;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // groupBox2
             // 
@@ -180,7 +181,11 @@ namespace Reguistro_de_Venta.UI.Consultas
             // 
             // FiltroComboBox
             // 
+            this.FiltroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FiltroComboBox.FormattingEnabled = true;
+            this.FiltroComboBox.Items.AddRange(new object[] {
+            "Nombre Producto",
+            "Marca Producto"});
             this.FiltroComboBox.Location = new System.Drawing.Point(52, 48);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(119, 23);
@@ -211,7 +216,7 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 520);
             this.Controls.Add(this.ImprimirButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataGridView);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.DescripcionTextBox);
@@ -221,7 +226,7 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.Controls.Add(this.FiltroCheckBox);
             this.Name = "cProductos";
             this.Text = "Consulta de Productos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -234,7 +239,7 @@ namespace Reguistro_de_Venta.UI.Consultas
         #endregion
 
         private System.Windows.Forms.Button ImprimirButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataGridView;
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton InactivoRadioButton;

@@ -34,8 +34,8 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.label1 = new System.Windows.Forms.Label();
             this.FiltroComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.HastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.DesdeDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
@@ -44,11 +44,11 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.ActivoRadioButton = new System.Windows.Forms.RadioButton();
             this.TodoRadioButton = new System.Windows.Forms.RadioButton();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
             this.ImprimirButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // FiltroCheckBox
@@ -72,7 +72,11 @@ namespace Reguistro_de_Venta.UI.Consultas
             // 
             // FiltroComboBox
             // 
+            this.FiltroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FiltroComboBox.FormattingEnabled = true;
+            this.FiltroComboBox.Items.AddRange(new object[] {
+            "Nombre",
+            "Direccion"});
             this.FiltroComboBox.Location = new System.Drawing.Point(52, 50);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(119, 23);
@@ -80,8 +84,8 @@ namespace Reguistro_de_Venta.UI.Consultas
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.HastaDateTimePicker);
+            this.groupBox1.Controls.Add(this.DesdeDateTimePicker);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(190, 3);
@@ -90,21 +94,21 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // dateTimePicker2
+            // HastaDateTimePicker
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(285, 13);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(122, 23);
-            this.dateTimePicker2.TabIndex = 3;
+            this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(285, 13);
+            this.HastaDateTimePicker.Name = "HastaDateTimePicker";
+            this.HastaDateTimePicker.Size = new System.Drawing.Size(122, 23);
+            this.HastaDateTimePicker.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // DesdeDateTimePicker
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(79, 13);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 23);
-            this.dateTimePicker1.TabIndex = 2;
+            this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DesdeDateTimePicker.Location = new System.Drawing.Point(79, 13);
+            this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
+            this.DesdeDateTimePicker.Size = new System.Drawing.Size(122, 23);
+            this.DesdeDateTimePicker.TabIndex = 2;
             // 
             // label3
             // 
@@ -184,15 +188,16 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.BuscarButton.Size = new System.Drawing.Size(72, 65);
             this.BuscarButton.TabIndex = 6;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // dataGridView1
+            // DataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(795, 410);
-            this.dataGridView1.TabIndex = 7;
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Location = new System.Drawing.Point(11, 79);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.RowTemplate.Height = 25;
+            this.DataGridView.Size = new System.Drawing.Size(795, 410);
+            this.DataGridView.TabIndex = 7;
             // 
             // ImprimirButton
             // 
@@ -211,7 +216,7 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 523);
             this.Controls.Add(this.ImprimirButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataGridView);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.DescripcionTextBox);
@@ -225,7 +230,7 @@ namespace Reguistro_de_Venta.UI.Consultas
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,8 +242,8 @@ namespace Reguistro_de_Venta.UI.Consultas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox FiltroComboBox;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker HastaDateTimePicker;
+        private System.Windows.Forms.DateTimePicker DesdeDateTimePicker;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox DescripcionTextBox;
@@ -247,7 +252,7 @@ namespace Reguistro_de_Venta.UI.Consultas
         private System.Windows.Forms.RadioButton ActivoRadioButton;
         private System.Windows.Forms.RadioButton TodoRadioButton;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataGridView;
         private System.Windows.Forms.Button ImprimirButton;
     }
 }
